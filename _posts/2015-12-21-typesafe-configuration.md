@@ -17,6 +17,8 @@ There is a common requirement in most of the Java/JavaEE projects related to how
 
 * [JSR Proposal](https://jcp.org/aboutJava/communityprocess/ec-public/materials/2014-09-2526/JavaSEConfigProposal.pdf)
 
+<!-- more -->
+
 ## How those libraries resolve the problem
 Most of those libraries require to have an injection point(s) for the configurations and also the configurations source(s), something like this:
 

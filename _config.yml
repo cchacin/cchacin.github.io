@@ -13,6 +13,7 @@ description:         'Blog about my Java/JavaEE experiences'
 url:                 http://cchacin.github.io
 baseurl:             ''
 paginate:            5
+excerpt_separator: "<!-- more -->"
 
 # About/contact
 author:

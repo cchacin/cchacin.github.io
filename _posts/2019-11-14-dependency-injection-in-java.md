@@ -15,6 +15,8 @@ Java is an object-oriented language with some functional aspects included in its
 
 In this article, we are going to describe the concept of Dependency Injection in Java and how it helps us have a more modular and decoupled codebase, which makes our lives easier, even for testing, without the need of any sophisticated container or framework.
 
+<!-- more -->
+
 ## What is Dependency?
 
 When a class `ClassA` uses any method of another class `ClassB`, we can say that `ClassB` is a dependency of `ClassA`.
