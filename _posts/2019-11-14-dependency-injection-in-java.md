@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Dependency Injection in Java
-tags: java dependency-injection di best-practices
+description: In this article, we describe the concept of Dependency Injection in Java and how it helps us have a more modular and decoupled codebase.
+categories: java
+tags: [java, dependency-injection, di, best-practices]
 ---
 
 ![Collaborators](https://cchacin.github.io/public/images/dependency-injection-in-java/Collaborators.png)
