@@ -15,6 +15,7 @@ import os
 
 post_dir = '_posts/'
 tag_dir = 'tag/'
+atom_dir = 'atom/'
 
 filenames = glob.glob(post_dir + '*md')
 
@@ -42,13 +43,24 @@ old_tags = glob.glob(tag_dir + '*.md')
 for tag in old_tags:
     os.remove(tag)
 
+old_atoms = glob.glob(atom_dir + '*.xml')
+for atom in old_atoms:
+    os.remove(atom)
+
 if not os.path.exists(tag_dir):
     os.makedirs(tag_dir)
+if not os.path.exists(atom_dir):
+    os.makedirs(atom_dir)
 
 for tag in total_tags:
     tag_filename = tag_dir + tag + '.md'
     f = open(tag_filename, 'a')
     write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
+    f.write(write_str)
+    f.close()
+    atom_filename = atom_dir + tag + '.xml'
+    f = open(atom_filename, 'a')
+    write_str = '---\nlayout: atom\ntag: ' + tag + '\nrobots: noindex\n---\n'
     f.write(write_str)
     f.close()
 print("Tags generated, count", total_tags.__len__())
