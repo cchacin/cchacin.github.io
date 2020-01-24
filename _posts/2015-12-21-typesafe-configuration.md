@@ -2,9 +2,7 @@
 layout: post
 title: Java 8 Type Safe Configuration with default methods
 description: Type Safe Configuration for Java/JavaEE projects.
-category: jakartaee
 tags: java javaee jakartaee configuration jsr type-safe
-author: carlos_chacin
 ---
 
 There is a common requirement in most of the Java/JavaEE projects related to how differentiate environment configurations like development, test, QA, production, etc. for that reason there are a lot of frameworks or libraries to resolve that:

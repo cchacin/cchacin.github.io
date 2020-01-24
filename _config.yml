@@ -6,11 +6,6 @@ highlighter:      rouge
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-avatar
-
 # Setup
 title:               Learning Java/JavaEE
 tagline:             'Blog about my Java/JavaEE experiences'
@@ -18,15 +13,7 @@ description:         'Blog about my Java/JavaEE experiences'
 url:                 http://cchacin.github.io
 baseurl:             ''
 paginate:            5
-excerpt_separator:   "<!-- more -->"
-
-feed:
-  categories:
-    - java
-    - javaee
-    - jakartaee
-    - microprofile
-  excerpt_only: true
+excerpt_separator: "<!-- more -->"
 
 # About/contact
 author:
