@@ -8,11 +8,9 @@ image: /public/images/dependency-injection-in-java/Collaborators.png
 
 ![Collaborators](https://cchacin.github.io/public/images/dependency-injection-in-java/Collaborators.png)
 
+> Lee la versión en Español [aquí](https://cchacin.github.io/2020/02/10/dependency-injection-in-java-spanish/)
+>
 > The article was initially published at [cchacin.github.io](https://cchacin.github.io/2019/11/14/dependency-injection-in-java/)
->
-> **UPDATE:** Editorial changes to improve the readability, thanks to `Shefali Agarwal`.
->
-> **UPDATE 2019-12-19:** Editorial changes to improve the readability.
 
 Java is an object-oriented language with some functional aspects included in its core. Like any other object-oriented language, classes and objects are the foundations of any functionality that we can write and use. The relationships between the classes/objects make it possible to extend and reuse functionality. However, the way that we choose to build those relationships determine how modular, decoupled, and reusable our codebase is, not only in terms of our production code but also in our test suites.
 
