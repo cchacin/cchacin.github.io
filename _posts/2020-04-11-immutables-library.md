@@ -289,11 +289,11 @@ public class App {
 
 Output:
 
-```json
+```
 NewModel{fieldA=A, fieldB=Sat Apr 11 15:53:26 PDT 2020, fieldC=1, fieldD=[a, b, d, e]}
 ```
 
-#### :triangular_ruler: A few comparisons:
+#### :triangular_ruler: A few comparisons
 
 |                            |   OldModel    |      NewModel      |
 |:---------------------------|:-------------:|:------------------:|
@@ -310,8 +310,6 @@ NewModel{fieldA=A, fieldB=Sat Apr 11 15:53:26 PDT 2020, fieldC=1, fieldD=[a, b, 
 By default, on maven projects, the compiler would generate and auto import the generated code to and from `target/generated_sources` folder, notice that most of the time, we ignore the `target/` folder in version control systems (VCS) like git and mercurial. using a `.gitinore` file in the project. This code should not have to be pushed to the centralized VCS.
 
 :exclamation::exclamation: **WARNING: It's a lot of code**
-<details><summary>See the code</summary>
-<p>
 
 ```java
 package com.groupon.api.talks;
@@ -691,8 +689,6 @@ public final class ImmutableNewModel implements NewModel {
   }
 }
 ```
-</p>
-</details>
 
 ## Conclusion
 The Java language can be even more verbose if we don't use the proper tools for the job, and for years, code generation has been a useful solution to make our life easier in the Java ecosystem. Reaching a good level of immutability in our codebases requires much effort when doing it manually, and it's susceptible to inadvertent mistakes, to avoid that, and make our codebase also smaller (less code fewer bugs) we can should the [Immutables.org](http://immutables.github.io/) library.
