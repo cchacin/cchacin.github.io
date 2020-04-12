@@ -7,7 +7,6 @@ image: /public/images/HomeOffice.png
 ---
 
 ![HomeOffice](https://cchacin.github.io/public/images/HomeOffice.png)
-# :tophat: Immutability in Java :fire: Made Easy
 
 > The article was initially published at [cchacin.github.io](https://cchacin.github.io/2020/04/11/immutables-library/)
 
@@ -313,6 +312,7 @@ By default, on maven projects, the compiler would generate and auto import the g
 :exclamation::exclamation: **WARNING: It's a lot of code**
 <details><summary>See the code</summary>
 <p>
+
 ```java
 package com.groupon.api.talks;
 
