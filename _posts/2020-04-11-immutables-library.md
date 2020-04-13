@@ -28,6 +28,8 @@ In [Effective Java](http://www.amazon.com/exec/obidos/ASIN/0134685997/ref=nosim/
 >   - No boilerplate setter and getters
 >   - No ugly IDE-generated `hashCode`, `equals` and `toString` methods that end up being stored in source control. [reference](http://immutables.github.io/immutable.html)
 
+<!-- more -->
+
 
 ### 🔧 Let's convert a mutable object into an immutable one (by hand ✋):
 
