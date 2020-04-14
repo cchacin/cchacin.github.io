@@ -83,7 +83,7 @@ public abstract class MyModel {
 - Generated the `Builder` pattern by default? 🔴
 - Generated helper methods for, i.e., `Optional` and `List`? 🔴 Let's see in the next section
 - The number of lines of code to write? 28 ✅
-- Required IDE's plugins? 🔴
+- It doesn't require IDE plugin ✅
 - Are the objects immutable? 🔴 Let's see in the next section
 
 ### 🔩 Creating the model with `Lombok`
@@ -108,7 +108,7 @@ public class MyModel {
 - Generated the `Builder` pattern by default? 🔴
 - Generated helper methods for, i.e., `Optional` and `List`? 🔴 Let's see in the next section
 - The number of lines of code to write? 14 ✅
-- Required IDE's plugins? 🔴
+- It requires IDE plugin 🔴
 - Are the objects immutable? 🔴 Let's see in the next section
 
 ### 🔩 Creating the model with `Immutables`
@@ -134,7 +134,7 @@ public interface MyModel {
 - Generated the `Builder` pattern by default? ✅
 - Generated helper methods for, i.e., `Optional` and `List`? ✅, Let's see in the next section
 - The number of lines of code to write? 15 ✅
-- Required IDE's plugins? ✅
+- It doesn't require IDE plugin ✅
 - Are the objects immutable? ✅, Let's see in the next section
 
 ## 🌵Tests
