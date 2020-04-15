@@ -35,7 +35,7 @@ The three libraries are based on an annotation processor to generate/modify code
 > [AutoValue](https://github.com/google/auto) provides an easier way to create immutable value classes, with a lot less code and less room for error, while not restricting your freedom to code almost any aspect of your class exactly the way you want it.
 
 > [Project Lombok](https://projectlombok.org/) is a java library that automatically plugs into your editor and build tools, spicing up your java.
-Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more.
+Never write another getter or equals method again, with one annotation your class has a fully-featured builder, Automate your logging variables, and much more.
 
 ## 📇 The Model
 
@@ -183,19 +183,19 @@ model1 == model2 // TRUE
 @Test
 void immutability() {
     // Create 2 lists containing the same element
-    final List<String> myList1 = new ArrayList<>();
+    var myList1 = new ArrayList<String>();
     myList1.add("OneValue");
-    final List<String> myList2 = Collections.singletonList("OneValue");
+    var myList2 = List.of("OneValue");
 
     // Create model 1, assigning the list1
-    MyModel myModel1 = new AutoValue_MyModel.Builder()
+    var myModel1 = new AutoValue_MyModel.Builder()
             .setMyOptional(Optional.of(1)) // 😥 🔴 No helper for Optional
             .setMyString("Hello")
             .setMyList(myList1) // 😥 🔴 No helper for List
             .build();
 
     // Create model 2, assigning the list2
-    MyModel myModel2 = new AutoValue_MyModel.Builder() // 😥 🔴 No helper for copying
+    var myModel2 = new AutoValue_MyModel.Builder() // 😥 🔴 No helper for copying
             .setMyOptional(Optional.of(1))
             .setMyString("Hello")
             .setMyList(myList2)
@@ -209,8 +209,8 @@ void immutability() {
     myList1.add("AnotherValue");
 
     // Compare the 2 objects:
-    //   - Test FAILS for AutoValue 😮 🔴
-    assertThat(myModel1).isEqualTo(myModel2);
+    // - PASSES objects are NOT EQUAL for AutoValue 😮 🔴
+    assertThat(myModel1).isNotEqualTo(myModel2);
 }
 ```
 
@@ -220,19 +220,19 @@ void immutability() {
 @Test
 void immutability() {
     // Create a mutable list with 1 element
-    final List<String> myList1 = new ArrayList<>();
+    var myList1 = new ArrayList<String>();
     myList1.add("OneValue");
-    final List<String> myList2 = Collections.singletonList("OneValue");
+    var myList2 = List.of("OneValue");
 
     // Create model 1, assigning the list1
-    MyModel myModel1 = MyModel.builder()
+    var myModel1 = MyModel.builder()
             .myOptional(Optional.of(1)) // 😥 🔴 No helper for Optional
             .myString("Hello")
             .myList(myList1) // 😥 🔴 No helper for List
             .build();
 
     // Create model 2, assigning the list2
-    MyModel myModel2 = MyModel.builder() 😥 🔴 // No helper for copying
+    var myModel2 = MyModel.builder() 😥 🔴 // No helper for copying
             .myOptional(Optional.of(1))
             .myString("Hello")
             .myList(myList2)
@@ -246,8 +246,8 @@ void immutability() {
     myList1.add("AnotherValue");
 
     // Compare the 2 objects:
-    //   - Test FAILS for Lombok 😮 🔴
-    assertThat(myModel1).isEqualTo(myModel2);
+    // - PASSES objects NOT EQUAL for Lombok 😮 🔴
+    assertThat(myModel1).isNotEqualTo(myModel2);
 }
 ```
 
@@ -257,19 +257,19 @@ void immutability() {
 @Test
 void immutability() {
    // Create a mutable list with 1 element
-   final List<String> myList1 = new ArrayList<>();
+   var myList1 = new ArrayList<String>();
    myList1.add("OneValue");
-   final List<String> myList2 = Collections.singletonList("OneValue");
+   var myList2 = List.of("OneValue");
 
    // Create model 1, assigning the list1
-   MyModel myModel1 = ImmutableMyModel.builder()
+   var myModel1 = ImmutableMyModel.builder()
            .myOptional(1) // 🎩 ✅ Helper for Optional
            .myString("Hello")
            .myList(myList1)
            .build();
 
    // Create model 2, assigning the list2
-   MyModel myModel2 = ImmutableMyModel.builder()
+   var myModel2 = ImmutableMyModel.builder()
            .from(myModel1) // 🎩 ✅ Helper for copying
            .addMyList("OneValue") // 🎩 ✅ Helper for List
            .build();
@@ -282,7 +282,7 @@ void immutability() {
    myList1.add("AnotherValue");
 
    // Compare the 2 objects:
-   //   - Test PASSES for Immutables 🎩 ✅
+   // - Test PASSES objects ARE EQUAL for Immutables 🎩 ✅
    assertThat(myModel1).isEqualTo(myModel2);
 }
 ```
@@ -303,7 +303,7 @@ void immutability() {
 
 - Even when the three libraries are doing a great job to avoid the boilerplate code, I personally use the `Immutables` library in most of the projects because of the safe defaults.
 
-- To be fair, both `Lombok` and `AutoValue` can achieve also immutability but it requires to pay more attention when creating the classes and that can cause problems.
+- To be fair, both `Lombok` and `AutoValue` can achieve also immutability but it requires paying more attention when creating the classes and that can cause problems.
 
 - One main advantage of `AutoValue` is that it generates less code and that would be convenient if you are developing on/for `Android`.
 
