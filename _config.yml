@@ -23,5 +23,17 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# PLugins
 plugins:
-  - jemoji
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: 'category/:name/'
