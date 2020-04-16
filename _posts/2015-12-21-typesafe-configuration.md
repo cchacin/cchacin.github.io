@@ -1,6 +1,5 @@
 ---
 layout: post
-categories: blog
 title: Java 8 Type Safe Configuration with default methods
 description: Type Safe Configuration for Java/JavaEE projects.
 tags: java javaee jakartaee configuration jsr type-safe
