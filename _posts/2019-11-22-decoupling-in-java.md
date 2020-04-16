@@ -4,9 +4,9 @@ title: Decoupling in Java
 published: false
 ---
 
-![Collaborators](https://cchacin.github.io/public/images/decoupling-in-java/Collaborators.png)
+![Collaborators](https://carloschac.in/public/images/decoupling-in-java/Collaborators.png)
 
-> The article was originally published at [cchacin.github.io](https://cchacin.github.io/2019/11/22/decoupling-in-java/)
+> The article was originally published at [carloschac.in](https://carloschac.in/2019/11/22/decoupling-in-java/)
 
 Maintaining a Java codebase is not an easy task, especially with a codebase with thousands of lines of production code and huge test suites that can get easily outdated or even broken after changes in the implementations.
 

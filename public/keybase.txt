@@ -4,7 +4,7 @@ https://keybase.io/cchacin
 
 I hereby claim:
 
-  * I am an admin of https://cchacin.github.io
+  * I am an admin of https://carloschac.in
   * I am cchacin (https://keybase.io/cchacin) on keybase.
   * I have a public key ASAYGkVTEuMIdYEZKAq7C_HPps7zN04Cw7SwseICUU7lago
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "FXqWRR23jYUBdC/RgDc8wRwN",
-      "hostname": "cchacin.github.io",
+      "hostname": "carloschac.in",
       "protocol": "https:"
     },
     "type": "web_service_binding",

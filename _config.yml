@@ -10,7 +10,7 @@ permalink:           pretty
 title:               Learning Java/JavaEE
 tagline:             'Blog about my Java/JavaEE experiences'
 description:         'Blog about my Java/JavaEE experiences'
-url:                 http://cchacin.github.io
+url:                 https://carloschac.in
 baseurl:             ''
 paginate:            5
 excerpt_separator: "<!-- more -->"
