@@ -18,6 +18,16 @@ excerpt_separator: "<!-- more -->"
 sass:
   style: compressed
 
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: [html, head, body]
+
 # About/contact
 author:
   name:              Carlos Chacin
