@@ -44,7 +44,6 @@ google_site_verification:
 # Custom vars
 version:             1.0.0
 plugins:
-  - jemoji
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap

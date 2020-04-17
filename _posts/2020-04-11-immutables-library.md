@@ -309,7 +309,7 @@ NewModel{fieldA=A, fieldB=Sat Apr 11 15:53:26 PDT 2020, fieldC=1, fieldD=[a, b, 
 | Nullability Checks         |    ❌     |    ✅     |
 
 
-#### :tada: The generated code
+#### 🎉 The generated code
 
 By default, on maven projects, the compiler would generate and auto import the generated code to and from `target/generated_sources` folder, notice that most of the time, we ignore the `target/` folder in version control systems (VCS) like git and mercurial. using a `.gitinore` file in the project. This code should not have to be pushed to the centralized VCS.
 
