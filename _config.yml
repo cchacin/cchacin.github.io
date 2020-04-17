@@ -21,7 +21,27 @@ author:
   url:               https://twitter.com/carloschacin
   email:             cchacin@gmail.com
 
+# Twitter
+twitter:
+  username: CarlosChacin
+  card: summary
+
+# Social
+social:
+  name: Carlos Chacin
+  links:
+    - https://twitter.com/CarlosChacin
+    - https://www.facebook.com/carloschacin
+    - https://www.linkedin.com/in/CarlosChacin
+    - https://github.com/cchacin
+    - https://keybase.io/cchacin
+
+google_site_verification:
+
 # Custom vars
 version:             1.0.0
 plugins:
   - jemoji
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
