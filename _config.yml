@@ -15,6 +15,9 @@ baseurl:             ''
 paginate:            5
 excerpt_separator: "<!-- more -->"
 
+sass:
+  style: compressed
+
 # About/contact
 author:
   name:              Carlos Chacin
