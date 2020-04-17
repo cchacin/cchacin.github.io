@@ -2,6 +2,7 @@
 layout: post
 title: 🎩 Immutability in Java 🔥 Made Easy
 description: In this article, we describe how to use the Immutables.org library to generate our immutable classes instead of doing manual error-prone implementations.
+lang: en_US
 tags: java best-practices immutability
 image: /public/images/HomeOffice.png
 ---

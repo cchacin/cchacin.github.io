@@ -2,6 +2,7 @@
 layout: post
 title: ☕️ Immutables/AutoValue/Lombok 🔥 Which One?
 description: In this article, we are going to compare some of the features of the Immutables.org library, Google AutoValue, and Project Lombok.
+lang: en_US
 tags: java best-practices immutability
 image: /public/images/OfficeDesk.png
 published: false
