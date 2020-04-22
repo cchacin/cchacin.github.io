@@ -55,7 +55,7 @@ if not os.path.exists(atom_dir):
 for tag in total_tags:
     tag_filename = tag_dir + tag + '.md'
     f = open(tag_filename, 'a')
-    write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
+    write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\n---\n'
     f.write(write_str)
     f.close()
     atom_filename = atom_dir + tag + '.xml'
