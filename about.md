@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-lang: en_US
+lang: en-us
 ---
 
 <p class="message">

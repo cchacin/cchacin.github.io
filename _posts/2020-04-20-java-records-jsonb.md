@@ -2,7 +2,7 @@
 layout: post
 title:  💾 Java 14 Records 🐞 with JakartaEE JSON-B
 description: Java 14 Record is a new kind of type declaration in the Java language. In this article, we are going to see how we can serialize and deserialize records to/from JSON using JakartaEE JSON-B.
-lang: en_US
+lang: en-us
 tags: jakartaee jsonb java14 records serialization
 cover_image: https://carloschac.in/public/images/java-records-jsonb.png
 ---

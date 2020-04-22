@@ -2,7 +2,7 @@
 layout: post
 title: 🚀 Java 14 Records 💾 (Preview)
 description: Java 14 Record is a new kind of type declaration in the Java language. Like an enum, a record is a restricted form of class. It declares its representation and commits to an API that matches that representation.
-lang: en_US
+lang: en-us
 tags: java jdk jdk14 java14 records immutability
 image: /public/images/java-records.png
 ---

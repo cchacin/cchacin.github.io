@@ -2,7 +2,7 @@
 layout: post
 title: 💉 Inyección de Dependencias en Java ☕️
 description: Este artículo, describe el concepto de Inyección de dependencias en Java y cómo nos ayuda a tener una base de código más modular y desacoplada
-lang: es_ES
+lang: es-es
 tags: java dependency-injection di best-practices
 image: /public/images/dependency-injection-in-java/Collaborators.png
 ---
