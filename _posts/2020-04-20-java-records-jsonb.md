@@ -19,6 +19,8 @@ Now the next steps are to see how we can serialize records to JSON and deseriali
 
 In this case, we would use the JSON-B specification used by JakartaEE and MicroProfile implementations like GlashFish, TomEE, Wildfly, OpenLiberty, and Quarkus.
 
+<!-- more -->
+
 Continuing with the [same example](https://carloschac.in/2020/04/17/java-records/) that we used in the previous article, we would need to add a JSON-B implementation, let's add the Eclipse Yasson dependency to our existing pom.xml file:
 
 ```xml

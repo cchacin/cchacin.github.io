@@ -21,6 +21,8 @@ A record has a name and a state description. The state description declares the 
 record Point(int x, int y) { }
 ```
 
+<!-- more -->
+
 ## Let's get started
 
 ### ⬇️ Download OpenJDK 14.0.1
@@ -47,7 +49,6 @@ public record Person(
     List<String> achievements) {
 }
 ```
-
 
 ### 💻 Compile it with `javac`
 
