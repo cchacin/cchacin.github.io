@@ -13,14 +13,9 @@ image: /public/images/java-records.png
 
 ## 🏁 Records 💾
 
-**Record** is a new kind of type declaration in the Java language. Like an
-_enum_, a _record_ is a restricted form of class. It declares its
-representation and commits to an API that matches that representation. Records
-give up a freedom that classes usually enjoy: the ability to decouple API from
-representation. In return, records gain a significant degree of concision.
+**Record** is a new kind of type declaration in the Java language. Like an _enum_, a _record_ is a restricted form of class. It declares its representation and commits to an API that matches that representation. Records give up a freedom that classes usually enjoy: the ability to decouple API from representation. In return, records gain a significant degree of concision.
 
-A record has a name and a state description. The state description declares the
-components of the record. Optionally, a record has a body. For example:
+A record has a name and a state description. The state description declares the components of the record. Optionally, a record has a body. For example:
 
 ```java
 record Point(int x, int y) { }
@@ -104,28 +99,19 @@ public final class Person extends java.lang.Record {
 }
 ```
 
-Because records make the semantic claim of being simple, transparent holders
-for their data, a record acquires many standard members automatically:
+Because records make the semantic claim of being simple, transparent holders for their data, a record acquires many standard members automatically:
 
 - A private final field for each component of the state description;
-- A public read accessor method for each element of the state description, with
-the same name and type as the component;
-- A public constructor, whose signature is the same as the state description,
-which initializes each field from the corresponding argument;
-- Implementations of equals and hashCode that say two records are equal if they
-are of the same type and contain the same state; and
-- An implementation of toString that includes the string representation of all
-the record components, with their names.
+- A public read accessor method for each element of the state description, with the same name and type as the component;
+- A public constructor, whose signature is the same as the state description, which initializes each field from the corresponding argument;
+- Implementations of equals and hashCode that say two records are equal if they are of the same type and contain the same state; and
+- An implementation of toString that includes the string representation of all the record components, with their names.
 
 ## ⚠️ Shallowly Immutable Data
 
-Similarly to the tests that we did in the article
-[Immutables/AutoValue/Lombok Which One?](https://carloschac.in/2020/04/12/immutables-autovalue-lombok/) where we check the default behavior in terms of
-immutability for those libraries, with the below test we demonstrate the
-statement mentioned in the [JEP 359: Records](https://openjdk.java.net/jeps/359):
+Similarly to the tests that we did in the article [Immutables/AutoValue/Lombok Which One?](https://carloschac.in/2020/04/12/immutables-autovalue-lombok/) where we check the default behavior in terms of immutability for those libraries, with the below test we demonstrate the statement mentioned in the [JEP 359: Records](https://openjdk.java.net/jeps/359):
 
-> Records provide a compact syntax for declaring classes, which are transparent
-holders for **shallowly immutable data**.
+> Records provide a compact syntax for declaring classes, which are transparent holders for **shallowly immutable data**.
 
 #### 📐 Test Immutability
 
@@ -170,9 +156,7 @@ void immutability() {
 }
 ```
 
-There are two ways of guaranteeing immutability when using records with mutable
-data types in their signature or when the data type is an interface, and we are
-not sure about the implementation, i.e., `java.util.Date` or `java.util.List`
+There are two ways of guaranteeing immutability when using records with mutable data types in their signature or when the data type is an interface, and we are not sure about the implementation, i.e., `java.util.Date` or `java.util.List`
 
 1) Create a safe copy of the data type in the record's constructor.
 2) Pass only immutable objects when creating the records.
@@ -180,8 +164,7 @@ not sure about the implementation, i.e., `java.util.Date` or `java.util.List`
 ## 🔆 Conclusions
 
 - ✅ _Records_ can reduce several lines of code to a one-liner.
-- ✅ With JDK 14, we can prescind of using some code generation libraries to
-minimize boilerplate code.
+- ✅ With JDK 14, we can prescind of using some code generation libraries to minimize boilerplate code.
 - ✅ A great option for:
   - 🔝 Tree nodes
   - 🔝 DTOs
@@ -189,8 +172,5 @@ minimize boilerplate code.
   - 🔝 Messages
   - 🔝 Value wrappers
   - 🔝 Discriminated Entities
-- ⚠️ _Records_ are only **Shallowly Immutables**, which means that we have to
-take into consideration the data types passed to them if we want to guarantee
-immutability.
-- ⚠️ _Records_ are a preview language feature, and it is not yet a standard in
-the JDK.
+- ⚠️ _Records_ are only **Shallowly Immutables**, which means that we have to take into consideration the data types passed to them if we want to guarantee immutability.
+- ⚠️ _Records_ are a preview language feature, and it is not yet a standard in the JDK.
