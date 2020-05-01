@@ -10,8 +10,6 @@ image: /public/images/dependency-injection-in-java/Collaborators.png
 ![Collaborators](https://carloschac.in/public/images/dependency-injection-in-java/Collaborators.png)
 
 > Read the English Version [here](https://carloschac.in/2019/11/14/dependency-injection-in-java/)
->
-> Éste artículo fue originalmente publicado en [carloschac.in](https://carloschac.in/2020/02/10/dependency-injection-in-java-spanish/)
 
 Java es un lenguaje orientado a objetos con algunos aspectos funcionales incluidos en su núcleo. Al igual que cualquier otro lenguaje orientado a objetos, las clases y los objetos son la base de cualquier funcionalidad que podamos escribir y usar. Las relaciones entre las clases / objetos permiten ampliar y reutilizar la funcionalidad. Sin embargo, la forma en que elegimos construir esas relaciones determina cuán modular, desacoplada y reutilizable es nuestra base de código, no solo en términos de nuestro código de producción sino también en nuestras suites de prueba.
 

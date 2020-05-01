@@ -6,8 +6,6 @@ published: false
 
 ![Collaborators](https://carloschac.in/public/images/decoupling-in-java/Collaborators.png)
 
-> The article was originally published at [carloschac.in](https://carloschac.in/2019/11/22/decoupling-in-java/)
-
 Maintaining a Java codebase is not an easy task, especially with a codebase with thousands of lines of production code and huge test suites that can get easily outdated or even broken after changes in the implementations.
 
 In terms of decoupling our classes, we tend to think that creating interfaces is a clear separation between our implementations (which is technically true), but at the end of the day even when our classes are not coupled to each other, they are instead coupled to the interfaces. One clear sign of this problem is our need to use mocking frameworks like mockito or jmock in order to have isolated unit tests. This is a code smell because if we think about it, we are not able to mock our collaborators without knowing the implementation details.

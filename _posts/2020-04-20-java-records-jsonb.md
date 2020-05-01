@@ -9,8 +9,6 @@ cover_image: https://carloschac.in/public/images/java-records-jsonb.png
 
 ![java-records-jsonb](https://carloschac.in/public/images/java-records-jsonb.png)
 
-> The article was initially published at [carloschac.in](https://carloschac.in/2020/04/20/java-records-jsonb/)
-
 ## 💾 Java 14 Records 🐞 with JakartaEE JSON-B
 
 In the previous article about Java 14 Records, we saw how to start creating Records to avoid writing much boilerplate code that the compiler would generate for us.

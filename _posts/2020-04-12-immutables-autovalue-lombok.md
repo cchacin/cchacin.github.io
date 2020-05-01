@@ -9,8 +9,6 @@ image: /public/images/OfficeDesk.png
 
 ![OfficeDesk](https://carloschac.in/public/images/OfficeDesk.png)
 
-> The article was initially published at [carloschac.in](https://carloschac.in/2020/04/12/immutables-autovalue-lombok/)
-
 In this article, we are going to compare some of the features of the [Immutables.org](http://immutables.github.io/) library, [Google AutoValue](https://github.com/google/auto) and [Project Lombok](https://projectlombok.org/):
 
 - Generated the `Builder` pattern by default?

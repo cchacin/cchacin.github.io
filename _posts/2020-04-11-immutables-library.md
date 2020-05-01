@@ -9,8 +9,6 @@ image: /public/images/HomeOffice.png
 
 ![HomeOffice](https://carloschac.in/public/images/HomeOffice.png)
 
-> The article was initially published at [carloschac.in](https://carloschac.in/2020/04/11/immutables-library/)
-
 In [Effective Java](http://www.amazon.com/exec/obidos/ASIN/0134685997/ref=nosim/javapractices-20), *Joshua Bloch* makes the following recommendation:
 
 > Classes should be immutable unless there's a very good reason to make them mutable... If a class cannot be made immutable, limit its mutability as much as possible.

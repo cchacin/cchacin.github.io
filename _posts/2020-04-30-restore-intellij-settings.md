@@ -9,8 +9,6 @@ cover_image: https://carloschac.in/public/images/intellij-restore-settings.png
 
 ![intellij-restore-settings](https://carloschac.in/public/images/intellij-restore-settings.png)
 
-> The article was initially published at [carloschac.in](https://carloschac.in/2020/04/30/restore-intellij-settings/)
-
 ## 🔌 Restore IntelliJ Idea settings ⛽
 
 After a long day trying to figure out how to reset all my IntelliJ settings, I decided to write this to document the obvious solution that was not that obvious to me.
@@ -29,18 +27,18 @@ After several installations and reinstallations of IDEs and different Java/JDK v
 2) Uninstall the Toolbox App
 3) Delete the following directories:
 
-    ```bash
-    $ rm -rf ~/Library/Application\ Support/JetBrains/
-    ```
+```bash
+$ rm -rf ~/Library/Application\ Support/JetBrains/
+```
 
-    ```bash
-    $ rm -rf ~/Library/Caches/JetBrains/IntelliJIdea2020.1
-    ```
+```bash
+$ rm -rf ~/Library/Caches/JetBrains/IntelliJIdea2020.1
+```
 4) Reinstall IntelliJ IDEA without using Toolbox
     
-    ```bash
-    $ brew cask install intellij
-    ```
+```bash
+$ brew cask install intellij
+```
 
 ## 💊 The obvious and simple solution 🍏
 
