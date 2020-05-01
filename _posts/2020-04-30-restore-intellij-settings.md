@@ -9,8 +9,6 @@ cover_image: https://carloschac.in/public/images/intellij-restore-settings.png
 
 ![intellij-restore-settings](https://carloschac.in/public/images/intellij-restore-settings.png)
 
-## 🔌 Restore IntelliJ Idea settings ⛽
-
 After a long day trying to figure out how to reset all my IntelliJ settings, I decided to write this to document the obvious solution that was not that obvious to me.
 
 I was using the 🔥 JetBrains Toolbox App 🔥 for a while to manage my IntelliJ Idea Ultimate installation along with other tools like Rider, WebStorm, and the Early Access Preview for IntelliJ Community Edition.
