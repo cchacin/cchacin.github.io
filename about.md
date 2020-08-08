@@ -4,28 +4,56 @@ title: About
 lang: en-us
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+### Hi there, I'm Carlos - a.k.a Talo 👋
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+## I'm a Husband, Father and Developer!
 
-There are currently two themes built on Poole:
+- 🔭 I’m currently working on the [MicroGen][microgen] project
+- 🌱 I’m currently learning Ruby, Kotlin and VIM
+- 👯 I’m looking to collaborate with other developers
+- 🤔 I’m looking for help with the [MicroGen][microgen] project
+- 💬 Ask me about: Unit Testing, TDD, Dependency Injection
+- 🥅 2020 Goals: Contribute more to Open Source projects
+- ⚡ Fun fact: I wanted to be a professional soccer player 🤣
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+### 📫 Connect with me:
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+[<img align="left" alt="carloschac.in" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
+[<img align="left" alt="Carlos Chacin | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="Carlos Chacin | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="Carlos Chacin | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
-## Setup
+<br />
 
-Some fun facts about the setup of this project include:
+### 📕 Latest Blog Posts
+<!-- BLOG-POST-LIST:START -->
+- [ 🔌 Restore IntelliJ Idea settings ⛽](https://dev.to/cchacin/restore-intellij-idea-settings-2n5e)
+- [ 💾 Java 14 Records 🐞 with JakartaEE JSON-B](https://dev.to/cchacin/java-14-records-with-jakartaee-json-b-160n)
+- [🚀 Java 14 Records 💾 (Preview)](https://dev.to/cchacin/java-14-records-preview-37om)
+- [☕️ Immutables/AutoValue/Lombok 🔥 Which One?](https://dev.to/cchacin/immutables-autovalue-lombok-which-one-2j33)
+- [🎩 Immutability in Java 🔥 Made Easy](https://dev.to/cchacin/immutability-in-java-made-easy-372g)
+<!-- BLOG-POST-LIST:END -->
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+<br />
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+![Carlo's github stats](https://github-readme-stats.vercel.app/api?username=cchacin&show_icons=true&include_all_commits=true&count_private=true)
 
-Thanks for reading!
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cchacin&layout=compact)](https://github.com/cchacin)
+
+### Popular Repositories
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cchacin&repo=MicroGen)](https://github.com/cchacin/MicroGen)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cchacin&repo=ImmutablesJsonb)](https://github.com/cchacin/ImmutablesJsonb)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cchacin&repo=dotfiles)](https://github.com/cchacin/dotfiles)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cchacin&repo=javafx-todoapp)](https://github.com/cchacin/javafx-todoapp)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cchacin&repo=nomo)](https://github.com/cchacin/nomo)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=tomitribe&repo=beryllium&show_owner=true)](https://github.com/tomitribe/beryllium)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=tomitribe&repo=tomee-jaxrs-starter-project&show_owner=true)](https://github.com/tomitribe/tomee-jaxrs-starter-project)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArpNetworking&repo=metrics-client-java&show_owner=true)](https://github.com/ArpNetworking/metrics-client-java)
+
+
+[website]: https://CarlosChac.in
+[twitter]: https://twitter.com/CarlosChacin
+[instagram]: https://instagram.com/cchacin
+[linkedin]: https://www.linkedin.com/in/carloschacin/?locale=en_US
+[microgen]: https://github.com/cchacin/MicroGen
