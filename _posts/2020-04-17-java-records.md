@@ -9,8 +9,6 @@ image: /public/images/java-records.png
 
 ![java-records](https://carloschac.in/public/images/java-records.png)
 
-## 🏁 Records 💾
-
 **Record** is a new kind of type declaration in the Java language. Like an _enum_, a _record_ is a restricted form of class. It declares its representation and commits to an API that matches that representation. Records give up a freedom that classes usually enjoy: the ability to decouple API from representation. In return, records gain a significant degree of concision.
 
 A record has a name and a state description. The state description declares the components of the record. Optionally, a record has a body. For example:

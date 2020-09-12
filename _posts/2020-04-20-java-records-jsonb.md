@@ -9,8 +9,6 @@ cover_image: https://carloschac.in/public/images/java-records-jsonb.png
 
 ![java-records-jsonb](https://carloschac.in/public/images/java-records-jsonb.png)
 
-## 💾 Java 14 Records 🐞 with JakartaEE JSON-B
-
 In the previous article about Java 14 Records, we saw how to start creating Records to avoid writing much boilerplate code that the compiler would generate for us.
 
 Now the next steps are to see how we can serialize records to JSON and deserialize JSON to records to be able to use them as a request/response representation for microservices.
