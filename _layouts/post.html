@@ -2,17 +2,15 @@
 layout: default
 ---
 
-<div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
-  <span>
-    [&nbsp;
-    {% for tag in page.tags %}
-      {% capture tag_name %}{{ tag }}{% endcapture %}
-      <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-    {% endfor %}
-    ]
-  </span>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<h3>{{ page.title }}</h3>
+<span>
+  [&nbsp;
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+  ]
+</span>
+<span class="post-date">{{ page.date | date_to_string }}</span>
+{{ content }}
 {% include related.html %}
