@@ -1,0 +1,9 @@
+<span class="post-tags">
+  [&nbsp;
+  {% for tag in include.tags %}
+    <a class="no-underline" href="/tag/{{ tag }}">
+      <code class="highligher-rouge"><nobr>{{ tag }}</nobr></code>&nbsp;
+    </a>
+  {% endfor %}
+  ]
+</span>

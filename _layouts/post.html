@@ -3,14 +3,14 @@ layout: default
 ---
 
 <h3>{{ page.title }}</h3>
-<span>
-  [&nbsp;
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-  {% endfor %}
-  ]
-</span>
+{% include post_tags.html tags=page.tags %}
 <span class="post-date">{{ page.date | date_to_string }}</span>
+
+{% assign author = site.data.authors[page.author] %}
+<a rel="author"
+  href="https://twitter.com/{{ author.twitter }}"
+  title="{{ author.name }}">
+    {{ author.name }}
+</a>
 {{ content }}
 {% include related.html %}

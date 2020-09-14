@@ -3,6 +3,7 @@ layout: post
 title:  🔌 Restore IntelliJ Idea settings ⛽
 description: After several installations and reinstallations of IDEs and different Java/JDK versions (8, 9, 11, 14), the IDE was not able to import my maven projects. The IntelliJ IDEA was acting as a simple text editor at this time 😟.
 lang: en-us
+author: cchacin
 tags: java ide IntelliJ idea
 cover_image: https://carloschac.in/public/images/intellij-restore-settings.png
 ---
@@ -33,7 +34,7 @@ $ rm -rf ~/Library/Application\ Support/JetBrains/
 $ rm -rf ~/Library/Caches/JetBrains/IntelliJIdea2020.1
 ```
 4) Reinstall IntelliJ IDEA without using Toolbox
-    
+
 ```bash
 $ brew cask install intellij
 ```
