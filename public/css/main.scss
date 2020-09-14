@@ -1,0 +1,17 @@
+---
+# Front matter added to ensure Jekyll processes file.
+---
+
+// Imports
+@import "normalize.css";
+@import "solo.css";
+@import "syntax.css";
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 1em;
+}
