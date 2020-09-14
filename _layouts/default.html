@@ -5,14 +5,15 @@
 
   <body>
     <article>
-        <div class="container">
-          <h1>
-            <a href="{{ site.url }}">{{ site.title }}</a>
-          </h1>
-          <h2>{{ site.tagline }}</h2>
-          [&nbsp;Blog | About&nbsp;]
-          {{ content }}
-        </div>
+      <div class="container">
+        <h1>
+          <a href="{{ site.url }}">{{ site.title }}</a>
+        </h1>
+        <h2>{{ site.tagline }}</h2>
+        {% include menu.html %}
+        <br />
+        {{ content }}
+      </div>
     </article>
   </body>
 </html>

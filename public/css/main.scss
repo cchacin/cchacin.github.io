@@ -8,10 +8,24 @@
 @import "syntax.css";
 
 h1 {
-  margin-bottom: 1em;
+  margin-bottom: 3rem;
 }
 
 h2 {
   text-align: left;
-  margin-bottom: 1em;
+  margin-bottom: 2rem;
+}
+
+nav {
+  font-size: 1.5rem;
+  position: relative;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+    }
+  }
 }
