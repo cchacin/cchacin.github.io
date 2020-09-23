@@ -5,7 +5,6 @@ description: Java 14 Record is a new kind of type declaration in the Java langua
 lang: en-us
 author: cchacin
 tags: jakartaee jsonb java14 records serialization
-cover_image: https://carloschac.in/public/images/java-records-jsonb.png
 ---
 
 ![java-records-jsonb](https://carloschac.in/public/images/java-records-jsonb.png)

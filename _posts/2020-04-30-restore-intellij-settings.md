@@ -5,7 +5,6 @@ description: After several installations and reinstallations of IDEs and differe
 lang: en-us
 author: cchacin
 tags: java ide IntelliJ idea
-cover_image: https://carloschac.in/public/images/intellij-restore-settings.png
 ---
 
 ![intellij-restore-settings](https://carloschac.in/public/images/intellij-restore-settings.png)

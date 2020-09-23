@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Decoupling in Java
-published: false
 ---
 
 ![Collaborators](https://carloschac.in/public/images/decoupling-in-java/Collaborators.png)
