@@ -1,9 +1,9 @@
 <nav>
   <div>
-    <ul> 
-      <li>|&nbsp;<a href="/">Home</a>&nbsp;|
+
+    <ul>
       {% for menu in site.data.menus %}
-      <li><a href="{{ menu.url }}">{{ menu.text }}</a>&nbsp;|</li>
+      <li><a href="{{ menu.url }}">{{ menu.text }}</a>&nbsp;&nbsp;</li>
       {% endfor %}
     </ul>
   </div>
