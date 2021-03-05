@@ -1,0 +1,8 @@
+{% assign author = site.data.authors[include.page.author] %}
+<p class="text-sm md:text-base text-green-500 font-bold">Posted at {{ include.page.date | date: '%B %d, %Y' }} <span class="text-gray-900">/</span> <a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}">{{ author.name }}</a></p>
+
+<div class="flex flex-wrap">
+  {% for tag in include.page.tags %}
+  <a class="mr-3 text-sm font-medium text-green-500 uppercase hover:text-green-600 dark:hover:text-green-400" href="/tag/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
+</div>

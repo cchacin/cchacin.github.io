@@ -13,9 +13,7 @@ lang: en-us
       </a>
     </h3>
 
-    {% include post_tags.html tags=post.tags %}
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% include post_metadata.html page=post %}
 
     {{ post.excerpt }}
 

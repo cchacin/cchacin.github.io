@@ -7,9 +7,9 @@ highlighter:      rouge
 permalink:           pretty
 
 # Setup
-title:               Learning Java/JavaEE
-tagline:             'Blog about my Java/JavaEE experiences'
-description:         'Blog about my Java/JavaEE experiences'
+title:               Carlos Chacin
+tagline:             'Software Engineering Experiences'
+description:         'Software Engineering experiences'
 url:                 https://carloschac.in
 baseurl:             ''
 paginate:            5
