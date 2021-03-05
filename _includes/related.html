@@ -1,5 +1,5 @@
 <div class="related">
-  <h2>You May Also Enjoy</h2>
+  <h4>You May Also Enjoy</h4>
   {% assign maxRelated = 4 %}
   {% assign minCommonTags =  1 %}
   {% assign maxRelatedCounter = 0 %}
@@ -31,9 +31,9 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">
+      <h6><a href="{{ site.baseurl }}{{ post.url }}">
       {{ post.title }}
-      <small>{{ post.date | date_to_string }}</small></a></h5>
+      <small>{{ post.date | date_to_string }}</small></a></h6>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}

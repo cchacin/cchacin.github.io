@@ -1,14 +1,56 @@
 ---
 layout: default
+post_class: post-template
 ---
 
-<h3>{{ page.title }}</h3>
-{% include post_metadata.html page=page %}
-<span class="post-date">{{ page.date | date_to_string }}</span>
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{'atom.xml' | relative_url }}">Subscribe</a>
+    </nav>
+</header>
 
-{% assign author = site.data.authors[page.author] %}
-<a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}">
-  {{ author.name }}
-</a>
-{{ content }}
-{% include related.html %}
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta">
+                {% if page.tags.size > 0 %}
+                    {{ page.tags | array_to_sentence_string | prepend: 'on ' }}
+                {% endif %}
+                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            </section>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        {% include related.html %}
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            {% if site.author %}
+                <figure class="author-image">
+                    <a class="img" href="{{'/' | relative_url }}" style="background-image: url({{'/public/images/cchacin.jpeg' | relative_url}})">
+                    <span class="hidden">{{site.author}}'s Picture</span></a>
+                </figure>
+                <section class="author">
+                    {% assign author = site.data.authors[page.author] %}
+                    <!-- Author Name -->
+                    <h4>
+                      <a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}">{{ author.name }}</a>
+                    </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        {{ author.description }}
+                    </p>
+                </section>
+            {% endif %}
+        </footer>
+
+    </article>
+
+</main>
